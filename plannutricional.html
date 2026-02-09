@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Rutina de Nutrición</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #22c55e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(180deg, #020617, var(--bg));
+      color: var(--text);
+    }
+    header {
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 .5rem; }
+    header p { margin: 0; color: var(--muted); }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 1.25rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,.35);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      border-bottom: 1px solid #1f2933;
+      padding-bottom: .5rem;
+    }
+
+    .macros {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: .75rem;
+    }
+    .macro {
+      background: #020617;
+      border-radius: 10px;
+      padding: .75rem;
+      text-align: center;
+    }
+    .macro span {
+      display: block;
+      font-size: .85rem;
+      color: var(--muted);
+    }
+    .macro strong {
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    ul { padding-left: 1.1rem; }
+    li { margin-bottom: .4rem; }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: .85rem;
+      color: var(--muted);
+    }
+
+    @media (min-width: 768px) {
+      .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🥗 Plan de alimentación – Lautaro</h1>
+  <p>Objetivo: 🔥 pérdida de tejido adiposo | Hecho para usar todos los días</p>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h2>🎯 Objetivo diario</h2>
+    <div class="macros">
+      <div class="macro"><strong>180 g</strong><span>Proteínas 💪</span></div>
+      <div class="macro"><strong>200 g</strong><span>Hidratos 🍚</span></div>
+      <div class="macro"><strong>Bajas</strong><span>Grasas 🧈❌</span></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>🍳 Desayunos y meriendas (elegí 1 opción)</h2>
+    <ul>
+      <li>🥪 <strong>Opción 1:</strong> 3 tostadas integrales (40 g) + queso untable light 🧀 + 1 fruta 🍎 + yogur descremado 🥛</li>
+      <li>🥣 <strong>Opción 2:</strong> Yogur descremado + 60 g cereales sin azúcar 🌾 + 1 fruta + soja texturizada</li>
+      <li>🍳 <strong>Opción 3:</strong> 3 tostadas integrales + 1 huevo + 1 clara + 1 fruta + yogur descremado</li>
+      <li>🥞 <strong>Opción 4:</strong> Tortilla de avena (60 g) + 1 huevo + 1 clara + fruta en trozos + leche descremada + yogur</li>
+      <li>🥪 <strong>Opción 5:</strong> Sándwich lactal con jamón natural/pavita + queso untable light + 2 frutas 🍌🍎 + yogur</li>
+    </ul>
+    <p>🔁 <strong>Reemplazos posibles:</strong> tostada ↔ cereales / galletas de arroz · huevo ↔ queso port salut light · fruta ↔ yogur con cereales</p>
+  </section>
+
+  <section class="card">
+    <h2>🍽️ Almuerzo y cena (armá tu plato)</h2>
+    <p>Regla base: <strong>1 hidrato + 1 proteína + vegetales</strong> (priorizar 🥦 + 🍗)</p>
+
+    <h3>🍚 Hidratos (medidos)</h3>
+    <ul>
+      <li>Arroz / polenta / fideos: 80 g crudo o 200 g cocido</li>
+      <li>Papa o batata: 1 unidad tamaño puño ✊</li>
+      <li>Legumbres: 200 g cocidas</li>
+      <li>Choclo: 1 lata</li>
+      <li>Fajitas: 4 unidades</li>
+    </ul>
+
+    <h3>🍗 Proteínas</h3>
+    <ul>
+      <li>Carnes magras / pollo sin piel / pescado</li>
+      <li>180 g cocido o 230 g crudo</li>
+      <li>Atún al agua + 1 huevo + queso light</li>
+      <li>Omelette: 2 huevos + 2 claras + jamón o atún</li>
+    </ul>
+
+    <h3>🥦 Vegetales (libres)</h3>
+    <p>300 g en almuerzo + 300 g en cena = 600 g/día</p>
+    <p>Hoja verde 🌿: libre</p>
+  </section>
+
+  <section class="card">
+    <h2>🧂 Condimentos</h2>
+    <p>✅ Libres: limón, vinagre, mostaza, especias 🌶️</p>
+    <p>⚠️ Con moderación: ketchup, barbacoa, sal</p>
+    <p>❌ Evitar: aceites, manteca, mayonesa, crema, palta, frutos secos</p>
+  </section>
+
+  <section class="card">
+    <h2>💧 Hidratación</h2>
+    <p>Objetivo: <strong>2,5 L por día</strong></p>
+    <p>Cuenta: agua, soda, mate, café, té ☕</p>
+    <p>Tip: usá botellas para medir 🔁</p>
+  </section>
+
+  <section class="card">
+    <h2>🧠 Tips clave</h2>
+    <ul>
+      <li>No hace falta horario fijo ⏰ → dividí ingestas</li>
+      <li>Controlá los hidratos en almuerzo y cena</li>
+      <li>Reducí grasas aunque sean “saludables”</li>
+      <li>Tartas: tapa simple, poco queso</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  Próxima consulta: 📅 2/3 – 9:00 hs | Lic. Alan Nicolás Ramírez
+</footer>
+
+</body>
+</html>
